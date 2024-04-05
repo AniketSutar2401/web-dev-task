@@ -1,0 +1,389 @@
+Html File:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Team Section | By Code Info</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="right-flag">
+      <div class="right-arrow"></div>
+      <div class="right-tip"></div>
+    </div>
+    <div>
+    <br>
+    <h1 id="company">Company Name</h1>
+    <br>
+    <h6><p>Welcome to [Your Company Name], where a dedicated team of professionals works <br> together to bring innovation,
+      creativity and expertise to software industry get to know <br> the individuals who make our company thrive.</p></h6>
+      <br>
+    <hr>
+  </div>
+
+  <div class="wrapper">
+    <br>
+    <h1>Meet Our Team</h1>
+    <br>
+    <h3>Leadership / Management Team</h3><br>
+    <div class="members-leader">
+      <div class="ceo">
+        <div class="team-mem-leader">
+          <img src="images/profile.jpg">
+          <h4>Mrs. Emma</h4>
+          <p>Founder/CEO</p>
+        </div>
+        <div class="team-mem-leader">
+          <img src="images/profile.jpg">
+          <h4>Mr. David</h4>
+          <p>Founder/CEO</p>
+        </div>
+      </div>
+      <div class="vp">
+        <div class="team-mem-leader">
+          <img src="images/profile.jpg">
+          <h4>Mr. Liam</h4>
+          <p>VP, Development & Growth</p>
+        </div>
+        <div class="team-mem-leader">
+          <img src="images/profile.jpg">
+          <h4>Mrs. Sophia</h4>
+          <p>VP, Sales & Marketing</p>
+        </div>
+        <div class="team-mem-leader">
+          <img src="images/profile.jpg">
+          <h4>Mr. John</h4>
+          <p>VP, Finance & Operation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="left-flag">
+    <div class="left-arrow"></div>
+    <h3 id="team">Development Team</h3>
+    <div class="left-tip"></div>
+  </div>
+  <div class="wrapper">
+    <div class="members">
+      <div class="team-mem">
+        <img src="images/profile.jpg">
+        <h4>Developer 1</h4>
+        <p>Team Lead SE</p>
+      </div>
+      <div class="team-mem">
+        <img src="images/profile.jpg">
+        <h4>Developer 2</h4>
+        <p>Software Engineer</p>
+      </div>
+      <div class="team-mem">
+        <img src="images/profile.jpg">
+        <h4>Developer 3</h4>
+        <p>Software Engineer</p>
+      </div>
+      <div class="team-mem">
+        <img src="images/profile.jpg">
+        <h4>Developer 4</h4>
+        <p>Software Engineer</p>
+      </div>
+      <div class="team-mem">
+        <img src="images/profile.jpg">
+        <h4>Developer 5</h4>
+        <p>Software Engineer</p>
+      </div>
+      <div class="team-mem">
+        <img src="images/profile.jpg">
+        <h4>Developer 6</h4>
+        <p>Software Engineer</p>
+      </div>
+      <div class="team-mem">
+        <img src="images/profile.jpg">
+        <h4>Developer 7</h4>
+        <p>Software Engineer</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-flag">
+    <div class="right-arrow"><h3 id="sales">Sales and Marketing Team</h3></div>
+    <div class="right-tip"></div>
+  </div>
+  <div class="wrapper">
+    <div class="members">
+        <div class="team-mem">
+          <img src="images/profile.jpg">
+          <h4>Employee 1</h4>
+          <p>Team Lead</p>
+        </div>
+        <div class="team-mem">
+          <img src="images/profile.jpg">
+          <h4>Employee 2</h4>
+          <p>Sales Officer</p>
+        </div>
+        <div class="team-mem">
+          <img src="images/profile.jpg">
+          <h4>Employee 3</h4>
+          <p>Sales Officer</p>
+        </div>
+        <div class="team-mem">
+          <img src="images/profile.jpg">
+          <h4>Employee 4</h4>
+          <p>Sales Officer</p>
+        </div>
+        <div class="team-mem">
+          <img src="images/profile.jpg">
+          <h4>Employee 5</h4>
+          <p>Marketing Officer</p>
+        </div>
+        <div class="team-mem">
+          <img src="images/profile.jpg">
+          <h4>Employee 6</h4>
+          <p>Marketing Officer</p>
+        </div>
+        <div class="team-mem">
+          <img src="images/profile.jpg">
+          <h4>Employee 7</h4>
+          <p>Marketing Officer</p>
+        </div>
+      </div>
+  </div>
+
+  <div class="left-flag">
+    <div class="left-arrow"></div>
+    <div class="left-tip"></div>
+  </div>
+  
+</body>
+</html>
+
+
+
+
+
+CSS File:
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  
+}
+
+.right-flag {
+  width: 100%;
+  height: 60px;
+  background-color: #cd20d9;
+}
+
+.right-arrow {
+  position: relative;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 95%;
+  height: 60px;
+  background: white;
+}
+
+.right-arrow:after {
+  content: '';
+  position: absolute;
+  right: -20px; 
+  top: 0; 
+  border-style: solid;
+  border-color: #cd20d9 transparent #cd20d9 white ;
+  border-width: 30px 20px; 
+}
+
+.left-flag {
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  
+}
+
+.left-arrow {
+  position: relative;
+  width: 5%;
+  height: 60px;
+  background: #cd20d9;
+}
+
+.left-arrow::before {
+  content: '';
+  position: absolute;
+  right: -20px; 
+  top: 0;   
+  border-style: solid;
+  border-color: #cd20d9 transparent #cd20d9 transparent;
+  border-width: 30px 20px; 
+}
+
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  width: 60%;
+  background-color: #cd20d9;
+  margin: 0 auto; 
+  padding: 5px;
+  border-radius: 5px;
+  
+}
+
+hr {
+  width: 400px;
+  margin: 10px auto;
+  border-bottom: 3px dashed #cd20d9;
+}
+
+#company {
+  color: white;
+  width: 60%;
+  background-color: #cd20d9;
+  margin: 0 auto; 
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#team {
+  padding: 5px;
+  width: fit-content;
+  
+}
+
+#sales{
+  margin: 0 auto; 
+  padding: 5px;
+  width: fit-content;
+
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+h4,
+p {
+  text-align: center;
+  font-size: 12px;
+  margin: 7px;
+}
+
+.wrapper {
+    margin-bottom: 20px;
+  }
+
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .team-mem {
+    width: calc(100% / 4 - 20px); 
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .members-leader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .ceo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .vp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .team-mem-leader {
+    width: calc(33.33% - 20px); 
+    margin: 10px;
+    text-align: center;
+  }
+  
+#company:hover {
+  background-color: #9e00a3; 
+}
+
+
+h3:hover {
+  background-color: #9e00a3; 
+}
+
+.left-flag:hover #team {
+  background-color: #9e00a3; 
+}
+
+.right-flag:hover #sales {
+  background-color: #9e00a3;
+}
+
+.team-mem-leader:hover {
+  background-color: white; 
+}
+
+.team-mem-leader:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease; 
+}
+
+.team-mem:hover {
+  background-color: white; 
+}
+
+.team-mem:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease; }
+
+  @media screen and (max-width: 768px) {
+    .team-mem-leader {
+      width: calc(100% - 20px); 
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .team-mem {
+      width: calc(100% / 3 - 20px); 
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .team-mem {
+      width: 100%; 
+    }
+  }

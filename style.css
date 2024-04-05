@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  
+}
+
+.right-flag {
+  width: 100%;
+  height: 60px;
+  background-color: #cd20d9;
+}
+
+.right-arrow {
+  position: relative;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 95%;
+  height: 60px;
+  background: white;
+}
+
+.right-arrow:after {
+  content: '';
+  position: absolute;
+  right: -20px; 
+  top: 0; 
+  border-style: solid;
+  border-color: #cd20d9 transparent #cd20d9 white ;
+  border-width: 30px 20px; 
+}
+
+.left-flag {
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  
+}
+
+.left-arrow {
+  position: relative;
+  width: 5%;
+  height: 60px;
+  background: #cd20d9;
+}
+
+.left-arrow::before {
+  content: '';
+  position: absolute;
+  right: -20px; 
+  top: 0;   
+  border-style: solid;
+  border-color: #cd20d9 transparent #cd20d9 transparent;
+  border-width: 30px 20px; 
+}
+
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  width: 60%;
+  background-color: #cd20d9;
+  margin: 0 auto; 
+  padding: 5px;
+  border-radius: 5px;
+  
+}
+
+hr {
+  width: 400px;
+  margin: 10px auto;
+  border-bottom: 3px dashed #cd20d9;
+}
+
+#company {
+  color: white;
+  width: 60%;
+  background-color: #cd20d9;
+  margin: 0 auto; 
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#team {
+  padding: 5px;
+  width: fit-content;
+  
+}
+
+#sales{
+  margin: 0 auto; 
+  padding: 5px;
+  width: fit-content;
+
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+h4,
+p {
+  text-align: center;
+  font-size: 12px;
+  margin: 7px;
+}
+
+.wrapper {
+    margin-bottom: 20px;
+  }
+
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .team-mem {
+    width: calc(100% / 4 - 20px); 
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .members-leader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .ceo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .vp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .team-mem-leader {
+    width: calc(33.33% - 20px); 
+    margin: 10px;
+    text-align: center;
+  }
+  
+#company:hover {
+  background-color: #9e00a3; 
+}
+
+
+h3:hover {
+  background-color: #9e00a3; 
+}
+
+.left-flag:hover #team {
+  background-color: #9e00a3; 
+}
+
+.right-flag:hover #sales {
+  background-color: #9e00a3;
+}
+
+.team-mem-leader:hover {
+  background-color: white; 
+}
+
+.team-mem-leader:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease; 
+}
+
+.team-mem:hover {
+  background-color: white; 
+}
+
+.team-mem:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease; }
+
+  @media screen and (max-width: 768px) {
+    .team-mem-leader {
+      width: calc(100% - 20px); 
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .team-mem {
+      width: calc(100% / 3 - 20px); 
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .team-mem {
+      width: 100%; 
+    }
+  }
