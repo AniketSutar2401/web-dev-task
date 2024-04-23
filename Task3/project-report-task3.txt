@@ -1,0 +1,40 @@
+Report for Task 3 - TO-Do App
+
+Name or Email ID: Aniket Sutar
+
+Task Title: TO-Do App Development
+
+Task Description: Develop a functional TO-Do App using HTML, CSS, and JavaScript, allowing users to manage tasks seamlessly.
+
+Steps Taken:
+
+1. HTML Structure: Created the basic structure of the app, including divs for task lists, input fields, and buttons.
+2. CSS Styling: Applied styles to enhance the visual appeal of the app, including colors, fonts, and layout.
+3. JavaScript Functionality:
+- Implemented functions for adding, editing, and deleting tasks dynamically.
+- Added task prioritization and status functionality (completed or pending).
+- Integrated local storage to save tasks, enabling users to revisit tasks later.
+
+Challenges Faced:
+
+1. Ensuring seamless interaction between HTML, CSS, and JavaScript components.
+2. Managing task prioritization and status functionality efficiently.
+3. Implementing local storage functionality securely.
+
+Solutions Implemented:
+
+1. Utilized event listeners and DOM manipulation in JavaScript to achieve dynamic task management.
+2. Designed a clear user interface with intuitive controls for easy task management.
+3. Implemented error handling and validation to ensure smooth user experience.
+
+
+Learnings:
+1. Enhanced proficiency in HTML, CSS, and JavaScript through practical application.
+2. Learned effective ways to integrate local storage for data persistence.
+3. Gained insights into UI/UX design principles for creating user-friendly interfaces.
+
+Project Update:
+
+1. Completed the development phase of the TO-Do App.
+2. Tested thoroughly for functionality and usability.
+3. Ready for deployment and user feedback.
