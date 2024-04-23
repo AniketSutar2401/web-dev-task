@@ -1,9 +1,9 @@
-# Task-Planner
+# To-Do-App
 ![alt text](https://github.com/AniketSutar2401/Task-Planner/blob/main/Screenshot%20(2).png)
 
-### The Task Planner aims to provide a solution for users to effectively organize and manage their tasks. 
+### The To-Do-App aims to provide a solution for users to effectively organize and manage their tasks. 
 ### Users often struggle to keep track of their tasks and prioritize them. 
-### The Task Planner will help users maintain a list of tasks, with the ability to add, update, read, and delete tasks.
+### The To-Do-App will help users maintain a list of tasks, with the ability to add, update, read, and delete tasks.
 ### Technical Requirements:The Task Planner should be developed using HTML, CSS and JavaScript.
 #### Constraints:
 ##### 1. Parent Task ID: It should be unique
