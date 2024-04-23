@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Task Forms</title>
+</head>
+
+<body>
+   <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+    <div class="container">
+        <div class="left-half">
+            <img class="img" src="digital-advertisement-5553435-4639139.png" />
+        </div>
+        <div class="right-half">
+            <div class="button-row">
+                <div class="button-container">
+                    <button id="openParentTaskForm">Add ParentTask</button>
+                    <button id="openSubtaskForm">Add SubTask</button>
+                </div>
+                <div class="search-container">
+                    <input type="search" id="searchField" placeholder="Search..." />
+                    <button type="submit" id="searchButton">Search</button>
+                </div>
+            </div>
+
+            <table id="taskTable">
+                <thead>
+                    <tr>
+                        <th>Task ID</th>
+                        <th>Task Name</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be added dynamically in JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="parentTaskForm" class="popup-form">
+            <label class="close-button" onclick="closePopupForm('parentTaskForm')">&times;</label
+        >
+
+        <h2>Add Parent Task</h2>
+        <div class="modal-overlay" id="modalOverlay"></div>
+
+        <form id="parentTaskForm">
+          <label for="parentTaskId">Parent Task ID:</label>
+            <input type="text" id="parentTaskId" name="parentTaskId" placeholder="Eg.101" required /><br />
+            <div id="parentTaskIdError" class="error-message"></div>
+
+            <label for="taskName">Task Name:</label>
+            <input type="text" id="taskName" name="taskName" placeholder="Eg.Do Exercise" required /><br />
+            <div id="taskNameError" class="error-message"></div>
+
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required /><br />
+
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required /><br />
+
+            <label for="status">Status:</label><br />
+            <select id="status" name="status" required>
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option></select
+          ><br />
+          <div class="parenttask">
+            <button type="button" id="submitParentTask">Add Task</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="subtaskForm" class="popup-form">
+        <label class="close-button" onclick="closePopupForm('subtaskForm')"
+          >&times;</label
+        >
+
+        <h2>Add Subtask</h2>
+        <form id="subtaskForm">
+          <label for="parentTaskSelect">Parent Task ID:</label>
+          <select id="parentTaskSelect" name="parentTaskSelect" required>
+            <!-- Options will be added dynamically in JavaScript --></select
+          ><br />
+
+          <label for="subtaskName">Subtask Name:</label>
+          <input
+            type="text"
+            id="subtaskName"
+            name="subtaskName"
+            placeholder="Eg.Do Exercise"
+            required
+          /><br />
+          <div id="subtaskNameError" class="error-message"></div>
+
+          <label for="subtaskStartDate">Subtask Start Date:</label>
+          <input
+            type="date"
+            id="subtaskStartDate"
+            name="subtaskStartDate"
+            required
+          /><br />
+
+          <label for="subtaskEndDate">Subtask End Date:</label>
+          <input
+            type="date"
+            id="subtaskEndDate"
+            name="subtaskEndDate"
+            required
+          /><br />
+
+          <label for="subtaskStatus">Subtask Status:</label>
+          <select id="subtaskStatus" name="subtaskStatus" required>
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option></select
+          ><br />
+
+          <button type="button" id="submitSubtask">Add Subtask</button>
+        </form>
+      </div>
+
+
+      <!-- Add the edit form -->
+      <div id="editTaskForm" class="popup-form">
+        <label class="close-button" onclick="closePopupForm('editTaskForm')"
+          >&times;</label
+        >
+
+        <h2>Edit Task</h2>
+        <form>
+          <label for="editParentTaskId">Parent Task ID:</label>
+          <input
+            type="text"
+            id="editParentTaskId"
+            name="editParentTaskId"
+            readonly
+          /><br />
+
+          <label for="editTaskName">Task Name:</label>
+          <input
+            type="text"
+            id="editTaskName"
+            name="editTaskName"
+            required
+          /><br />
+          <div id="editTaskNameError" class="error-message"></div>
+
+          <label for="editStartDate">Start Date:</label>
+          <input
+            type="date"
+            id="editStartDate"
+            name="editStartDate"
+            required
+          /><br />
+
+          <label for="editEndDate">End Date:</label>
+          <input
+            type="date"
+            id="editEndDate"
+            name="editEndDate"
+            required
+          /><br />
+
+          <label for="editStatus">Status:</label><br />
+          <select id="editStatus" name="editStatus" required>
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option></select
+          ><br />
+
+          <button type="button" id="submitEditTask">Update Task</button>
+        </form>
+      </div>
+
+      <!-- Add the delete confirmation form -->
+      <div id="deleteConfirmationForm" class="popup-form">
+        <h2>Delete Task</h2>
+        <p>Are you sure you want to delete this task?</p>
+        <button type="button" id="confirmDelete">Yes</button>
+        <button type="button" id="cancelDelete">No</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
