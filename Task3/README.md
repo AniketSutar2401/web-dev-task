@@ -1,5 +1,5 @@
 # To-Do-App
-![alt text](https://github.com/AniketSutar2401/Task-Planner/blob/main/Screenshot%20(2).png)
+![alt text](Task3/images/Screenshot To-Do App.png)
 
 ### The To-Do-App aims to provide a solution for users to effectively organize and manage their tasks. 
 ### Users often struggle to keep track of their tasks and prioritize them. 
